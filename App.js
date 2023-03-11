@@ -16,7 +16,6 @@ import {
 } from 'react-native';
 
 import MainNavigation from './route/nav';
-import Card from './src/components/Amount';
 import Home from './src/Screens/Home';
 import Page2 from './src/Screens/Page2';
 import QnetProvider from './src/Store/qnetProvider';

@@ -29,42 +29,30 @@ const CategoryItem = (props) => {
 const styles = StyleSheet.create({
     imagesorderboard: {
         flex: 1 , 
-        flexDirection:'row'
-    },
-    imagesorderboard2: {
-        flex: 1
+        flexDirection:'row' ,
     },
     orderboared: {
-        flex: 1,
-        borderWidth: 1,
+        borderWidth: 0.5,
         borderRadius: 10,
-        marginTop: 1,
         marginHorizontal: 10,
-        borderColor: 'rgba(255,255,255,0.8s)',
         marginBottom: 15,
-        backgroundColor: 'rgba(100,100,100,0.3)'
+        backgroundColor: 'rgba(100,100,100,0.2)',
     },
     Text: {
         alignSelf: 'center',
-        textAlign:'center',
         fontSize: 30,
-        // marginTop: -65,
-        marginBottom: 30,
         color: 'white',
         marginLeft: 50 , 
-        // width:"100%"
     },
     imagesStyle: {
-        width: 90,
+        width: '35%',
         height: 90,
-        marginLeft: 4,
-        marginTop: 4,
-        borderRadius: 10
+        borderRadius: 10 ,
     },
     buyStyle:{
         marginLeft: 0 , 
         width:"100%" , 
-        textAlign:'center'
+        textAlign:'center' ,
     },
 
 

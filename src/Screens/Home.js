@@ -29,7 +29,6 @@ const Home = (props) => {
         </Pressable>
       </View>
     </ImageBackground>
-
   )
 }
 
@@ -53,7 +52,6 @@ const Styles = StyleSheet.create({
 
   textInput: {
     height: 40,
-    //   width: '60%',
     fontWeight: '600',
 
   },

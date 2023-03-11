@@ -15,6 +15,7 @@ const Prodocts = (props) => {
         const data = ProdoctsData[catrgory] || [];
         console.log(data);
         return data.map(Prodoct => {
+            console.log("Prodoct : " , Prodoct );
             return <Card
                 name={Prodoct.name}
                 price={Prodoct.price}
@@ -28,6 +29,7 @@ const Prodocts = (props) => {
     return (
         <ImageBackground source={Images.homeBackground()} style={{ flex: 1 }}>
             <Text style={{ color: '#ffff', fontSize: 30, textAlign: 'center' }} >{catrgory}</Text>
+            {/* <image style={{width : '30%' , height : 40 ,}}> {catrgory}</image> */}
             <ScrollView style={{ flex: 1 }}>
                 {renderProducts()}
             </ScrollView>

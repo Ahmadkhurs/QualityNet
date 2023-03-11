@@ -1,10 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { ImageBackground, Pressable, StyleSheet, Text, View, Image } from 'react-native';
 import QnetContext from '../Store/qnetContext';
-
-const Card = props => {
+const Amount = props => {
   const amountSaver = amount ;
-  const { image, price, name , hideAddRemove } = props;
+  const { image ,price, name , hideAddRemove } = props;
 
   const { cart, setCart } = useContext(QnetContext)
   const orderIndex = cart?.findIndex(order => order.name === name);
@@ -33,6 +32,7 @@ const Card = props => {
     
   }
 
+  console.log("image: " , props.image);
 
   const updateCart = (newAmont) => {
     var cartCopy = cart;
@@ -80,7 +80,7 @@ const Card = props => {
 
     <View style={styles.cardContainer} >
       <View style={styles.productContainer}>
-        <Image source={image} style={styles.imageStyle} />
+        <Image source={props.image} style={styles.imageStyle} /> 
         <View style={styles.textContainer}>
           <Text style={styles.amountStyle}>{name}</Text>
           <Text style={styles.amountStyle}>{"price: " + price}</Text>
@@ -100,7 +100,6 @@ const Card = props => {
           <Text style={styles.amountStyle}>-</Text>
         </Pressable>
       }
-
       <Text style={styles.amountStyle}>{"Final price: " + price * amount}</Text>
     </View>
 
@@ -109,11 +108,10 @@ const Card = props => {
 
 const styles = StyleSheet.create({
   cardContainer: {
-    width: "80%",
-    borderWidth: 5,
-    borderColor: 'rgb(159,0,205)',
+    width: "90%",
+    borderWidth: 3,
+    borderColor: 'rgb(0,100,200)',
     alignSelf: 'center',
-    marginBottom: 10,
     borderRadius: 15,
     marginTop: 10 ,
   },
@@ -121,7 +119,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: 'black',
     marginHorizontal: 5 ,
-
   },
   amountStyle: {
     alignSelf: 'center',
@@ -130,20 +127,22 @@ const styles = StyleSheet.create({
   },
   priceStyle: {
     alignSelf: 'center',
-    fontSize: 20,
+    fontSize:20,
     marginTop: -10,
     color: 'rgba(0,0,0,0.8)',
   },
   imageStyle: {
-    width: 90,
-    height: 90,
-    marginTop: 15,
-    marginLeft: 15,
-    borderRadius: 15,
+    width: 100,
+    height: 100,
+    // marginTop: 15,
+    // marginLeft: 15,
+    borderRadius: 10,
+    backgroundColor : 'white' ,
+    resizeMode:'contain',
   },
   productContainer: {
     flexDirection: 'row',
-    width: '100%',
+    // width: '100%',
   },
   textContainer: {
     paddingTop: 30,
@@ -152,4 +151,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default Card
+export default Amount

@@ -1,50 +1,50 @@
 
-import Images from "../../assest/images/Images"
+const { default: Images } = require("../../assest/images/Images")
 
 const ProdoctsData = {
-    Smartphones : [
+    Smartphones: [
         {
             name: "Iphone 14 Promax",
-            price: 20,
+            price: 5550,
             image: Images.Iphone14Promax()
         },
         {
             name: "Iphone 14 Pro",
-            price: 30,
+            price: 4800,
             image: Images.Iphone14Pro()
         },
         {
             name: "Iphone 14 Plus",
-            price: 15,
+            price: 3800,
             image: Images.Iphone14Plus()
         },
         {
             name: "Iphone 14",
-            price: 20,
+            price: 3200,
             image: Images.Iphone14()
         },
         {
-            name : "Iphone 13 Promax" ,
-            price : 500 ,
-            image : Images.Iphone13Promax()
+            name: "Iphone 13 Promax",
+            price: 500,
+            image: Images.Iphone13Promax()
         },
         {
-        name : "Iphone 13 Pro" ,
-        price : 400 ,
-        image : Images.Iphone13Pro()
+            name: "Iphone 13 Pro",
+            price: 400,
+            image: Images.Iphone13Pro()
         },
         {
-        name : "Iphone 13" ,
-        price : 300 ,
-        Image : Images.Iphone13()
+            name: "Iphone 13",
+            price: 300,
+            image: Images.Iphone13()
         },
         {
-            name : "Iphone 13 Mini" ,
-            price : 200,
-            Image : Images.Iphone13Mini()
+            name: "Iphone 13 Mini",
+            price: 200,
+            image: Images.Iphone13Mini()
         },
     ],
-    Ipads : [
+    Ipads: [
         {
             name: "Larg Pizza",
             price: 65,
@@ -83,13 +83,13 @@ const ProdoctsData = {
             // image: Images.chickenburger()
         },
     ],
-    Watches : [
+    Watches: [
         {
-        name: "Apple Watch series 8",
-        price : 25,
+            name: "Apple Watch series 8",
+            price: 25,
         },
     ],
-        
+
 
 }
 
